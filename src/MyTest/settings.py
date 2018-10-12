@@ -54,7 +54,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'MyTest.urls'
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -76,7 +75,8 @@ WSGI_APPLICATION = 'MyTest.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-
+# Python 自带SQLite3数据库，Django默认使用SQLite3数据库，
+# 如果使用其它数据库请在settings.py文件中设置。
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
