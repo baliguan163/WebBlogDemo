@@ -7,7 +7,6 @@ from .models import Comment
 # （例如这里的评论表单对应着评论模型），那么使用 ModelForm 类会简单很多，这是 Django 为我们提供的方便。之后我们在表
 # 单的内部类 Meta 里指定一些和表单相关的东西。model = Comment 表明这个表单对应的数据库模型是 Comment 类。fields = 
 # ['name', 'email', 'url', 'text'] 指定了表单需要显示的字段，这里我们指定了 name、email、url、text 需要显示
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
